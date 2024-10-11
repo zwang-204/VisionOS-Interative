@@ -6,12 +6,17 @@ The app's main entry point.
 */
 
 import SwiftUI
+import RealityKitContent
 
 @main
 struct EntryPoint: App {
+    init() {
+        RealityKitContent.GestureComponent.registerComponent()
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ShapesView()
+            ShapeViewOne()
         }
     }
 }

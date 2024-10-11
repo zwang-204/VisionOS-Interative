@@ -1,49 +1,70 @@
-/*
-See the LICENSE.txt file for this sample’s licensing information.
-
-Abstract:
-A view that displays five different 3D shapes.
-*/
-
 import SwiftUI
 import RealityKit
+import RealityKitContent
 
-/// A view that displays predefined 3D shapes with white material in a row along the x-axis.
-struct ShapesView: View {
+struct ContentView: View {
+    var body: some View {
+        NavigationStack {
+            VStack {
+                Text("Welcome to the 3D Shapes App")
+                    .font(.largeTitle)
+                    .padding()
+
+                // Button that navigates to ShapesView
+                NavigationLink(destination: ShapeViewOne()) {
+                    Text("Show 3D Shapes")
+                        .font(.headline)
+                        .padding()
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
+            }
+        }
+    }
+}
+
+struct ShapeViewOne: View {
     var body: some View {
         RealityView { content in
             addGeometryShapes(to: content)
+        } update: { content in
+            
         }
+        .installGestures()
+        .navigationTitle("3D Shapes") // Add a title for the navigation
     }
 
-    /// Add 3D shapes to the `RealityView` content.
     func addGeometryShapes(to content: RealityViewContent) {
-        /// The array of all the 3D entities that represent different shapes.
         let allGeometryEntities = [
-            ShapesView.boxEntity,
-            ShapesView.roundedBoxEntity,
-            ShapesView.sphereEntity,
-            ShapesView.coneEntity,
-            ShapesView.cylinderEntity
+            ShapeViewOne.boxEntity,
+            ShapeViewOne.roundedBoxEntity,
+            ShapeViewOne.sphereEntity,
+            ShapeViewOne.coneEntity,
+            ShapeViewOne.cylinderEntity,
+            ShapeViewOne.bunnyEntity
         ]
 
-        /// The initial position along the x-axis for the first shape.
         var xOffset: Float = -0.25
 
-        // Position the entities along the x-axis, and add to the content.
         for entity in allGeometryEntities {
-            // Set the entity's position to the x-axis offset.
             entity.position.x = xOffset
+            var collision = CollisionComponent(shapes: [.generateSphere(radius: 0.2)])
+            collision.filter = CollisionFilter(group: [], mask: [])
+            entity.components.set(collision)
+            entity.components.set(InputTargetComponent())
+            var component = GestureComponent()
+            component.canDrag = true
+            component.canScale = true
+            component.canRotate = true
+            entity.components.set(component)
 
-            // Add the entity to the `RealityView` content.
             content.add(entity)
 
-            // Increment the x-axis offset for the next entity.
             xOffset += 0.125
         }
     }
 }
 
 #Preview(windowStyle: .automatic) {
-    ShapesView()
+    ContentView()
 }

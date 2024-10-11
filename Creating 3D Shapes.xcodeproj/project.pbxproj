@@ -3,27 +3,39 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D9A04F332CB2609E002FC46F /* bunny.usdc in Resources */ = {isa = PBXBuildFile; fileRef = D9A04F322CB2609E002FC46F /* bunny.usdc */; };
+		D9A04F382CB26A60002FC46F /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = D9A04F372CB26A60002FC46F /* RealityKitContent */; };
+		D9ED45332CB8E7A000B89AEE /* Tarus.usdz in Resources */ = {isa = PBXBuildFile; fileRef = D9ED45322CB8E7A000B89AEE /* Tarus.usdz */; };
+		D9ED45342CB8E7A000B89AEE /* Mug.usdz in Resources */ = {isa = PBXBuildFile; fileRef = D9ED45312CB8E7A000B89AEE /* Mug.usdz */; };
+		D9ED45382CB8E83A00B89AEE /* Tarus_Image.png in Resources */ = {isa = PBXBuildFile; fileRef = D9ED45372CB8E83A00B89AEE /* Tarus_Image.png */; };
+		D9ED45392CB8E83A00B89AEE /* Mug_Image.png in Resources */ = {isa = PBXBuildFile; fileRef = D9ED45362CB8E83A00B89AEE /* Mug_Image.png */; };
 		DF74ACE92BC7158E003723AB /* EntryPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF74ACE82BC7158E003723AB /* EntryPoint.swift */; };
 		DF74ACEF2BC71591003723AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF74ACEE2BC71591003723AB /* Assets.xcassets */; };
 		DF74ACF22BC71591003723AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF74ACF12BC71591003723AB /* Preview Assets.xcassets */; };
-		DF74ACFC2BC717B1003723AB /* ShapesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF74ACFB2BC717B1003723AB /* ShapesView.swift */; };
+		DF74ACFC2BC717B1003723AB /* ShapeViewOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF74ACFB2BC717B1003723AB /* ShapeViewOne.swift */; };
 		F303BAA32BE25A4000751516 /* ShapesView+Entities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F303BAA22BE25A4000751516 /* ShapesView+Entities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1556B3D937442D8C81BC8F8D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		5ABE239001B96717E9299EC7 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
-		B4CBA02A72CE365036FF16F5 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		5ABE239001B96717E9299EC7 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		B4CBA02A72CE365036FF16F5 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		D9A04F322CB2609E002FC46F /* bunny.usdc */ = {isa = PBXFileReference; lastKnownFileType = file; path = bunny.usdc; sourceTree = "<group>"; };
+		D9A04F342CB26A33002FC46F /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
+		D9ED45312CB8E7A000B89AEE /* Mug.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = Mug.usdz; sourceTree = "<group>"; };
+		D9ED45322CB8E7A000B89AEE /* Tarus.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tarus.usdz; sourceTree = "<group>"; };
+		D9ED45362CB8E83A00B89AEE /* Mug_Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mug_Image.png; sourceTree = "<group>"; };
+		D9ED45372CB8E83A00B89AEE /* Tarus_Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tarus_Image.png; sourceTree = "<group>"; };
 		DF74ACE12BC7158E003723AB /* Creating 3D Shapes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Creating 3D Shapes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF74ACE82BC7158E003723AB /* EntryPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryPoint.swift; sourceTree = "<group>"; };
 		DF74ACEE2BC71591003723AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF74ACF12BC71591003723AB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DF74ACF32BC71591003723AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DF74ACFB2BC717B1003723AB /* ShapesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesView.swift; sourceTree = "<group>"; };
+		DF74ACFB2BC717B1003723AB /* ShapeViewOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeViewOne.swift; sourceTree = "<group>"; };
 		F303BAA22BE25A4000751516 /* ShapesView+Entities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShapesView+Entities.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -32,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9A04F382CB26A60002FC46F /* RealityKitContent in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,9 +68,37 @@
 			path = .;
 			sourceTree = "<group>";
 		};
+		D9A04F312CB26085002FC46F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D9A04F322CB2609E002FC46F /* bunny.usdc */,
+				D9ED45312CB8E7A000B89AEE /* Mug.usdz */,
+				D9ED45322CB8E7A000B89AEE /* Tarus.usdz */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D9A04F352CB26A33002FC46F /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				D9A04F342CB26A33002FC46F /* RealityKitContent */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		D9ED45352CB8E7CD00B89AEE /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D9ED45362CB8E83A00B89AEE /* Mug_Image.png */,
+				D9ED45372CB8E83A00B89AEE /* Tarus_Image.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		DF74ACD82BC7158E003723AB = {
 			isa = PBXGroup;
 			children = (
+				D9A04F352CB26A33002FC46F /* Packages */,
 				1556B3D937442D8C81BC8F8D /* README.md */,
 				F50A13D12C59B47B004EA3E4 /* Creating 3D Shapes */,
 				DF74ACE22BC7158E003723AB /* Products */,
@@ -77,6 +118,8 @@
 		F50A13D12C59B47B004EA3E4 /* Creating 3D Shapes */ = {
 			isa = PBXGroup;
 			children = (
+				D9ED45352CB8E7CD00B89AEE /* Images */,
+				D9A04F312CB26085002FC46F /* Models */,
 				F54EC62B2C2B692400BF3BDC /* Views */,
 				F54EC62C2C2B693200BF3BDC /* Entities */,
 				F54EC62D2C2B694C00BF3BDC /* App */,
@@ -87,7 +130,7 @@
 		F54EC62B2C2B692400BF3BDC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				DF74ACFB2BC717B1003723AB /* ShapesView.swift */,
+				DF74ACFB2BC717B1003723AB /* ShapeViewOne.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -156,6 +199,9 @@
 				Base,
 			);
 			mainGroup = DF74ACD82BC7158E003723AB;
+			packageReferences = (
+				D9A04F362CB26A60002FC46F /* XCLocalSwiftPackageReference "Packages/RealityKitContent" */,
+			);
 			productRefGroup = DF74ACE22BC7158E003723AB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -172,6 +218,11 @@
 			files = (
 				DF74ACF22BC71591003723AB /* Preview Assets.xcassets in Resources */,
 				DF74ACEF2BC71591003723AB /* Assets.xcassets in Resources */,
+				D9ED45382CB8E83A00B89AEE /* Tarus_Image.png in Resources */,
+				D9ED45392CB8E83A00B89AEE /* Mug_Image.png in Resources */,
+				D9ED45332CB8E7A000B89AEE /* Tarus.usdz in Resources */,
+				D9ED45342CB8E7A000B89AEE /* Mug.usdz in Resources */,
+				D9A04F332CB2609E002FC46F /* bunny.usdc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,7 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F303BAA32BE25A4000751516 /* ShapesView+Entities.swift in Sources */,
-				DF74ACFC2BC717B1003723AB /* ShapesView.swift in Sources */,
+				DF74ACFC2BC717B1003723AB /* ShapeViewOne.swift in Sources */,
 				DF74ACE92BC7158E003723AB /* EntryPoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,6 +443,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		D9A04F362CB26A60002FC46F /* XCLocalSwiftPackageReference "Packages/RealityKitContent" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/RealityKitContent;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D9A04F372CB26A60002FC46F /* RealityKitContent */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RealityKitContent;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DF74ACD92BC7158E003723AB /* Project object */;
 }

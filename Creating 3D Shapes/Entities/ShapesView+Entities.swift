@@ -6,8 +6,9 @@ An extension of the app's main view that creates entities with geometries.
 */
 
 import RealityKit
+import RealityKitContent
 
-extension ShapesView {
+extension ShapeViewOne {
     /// The white material that responds to lighting.
     static let whiteMaterial = SimpleMaterial(color: .white, isMetallic: false)
 
@@ -85,7 +86,37 @@ extension ShapesView {
 
         // Add the mesh resource to a model component, and add it to the entity.
         entity.components.set(ModelComponent(mesh: roundedBoxMesh, materials: [whiteMaterial]))
-
+        
+        return entity
+    }()
+    
+    static let bunnyEntity: Entity = {
+        // Create a new entity instance.
+        guard let entity = try? Entity.load(named: "bunny") else {
+                fatalError("Unable to load the bunny model")
+            }
+        entity.setOrientation(simd_quatf.init(angle: 90, axis: SIMD3(x: 1, y: 0, z: 0)), relativeTo: entity)
+        
+        return entity
+    }()
+    
+    static let mugEntity: Entity = {
+        // Create a new entity instance.
+        guard let entity = try? Entity.load(named: "Mug") else {
+                fatalError("Unable to load the mug model")
+            }
+        entity.setOrientation(simd_quatf.init(angle: 0, axis: SIMD3(x: 1, y: 0, z: 0)), relativeTo: entity)
+        
+        return entity
+    }()
+    
+    static let tarusEntity: Entity = {
+        // Create a new entity instance.
+        guard let entity = try? Entity.load(named: "Tarus") else {
+                fatalError("Unable to load the tarus model")
+            }
+        entity.setOrientation(simd_quatf.init(angle: 0, axis: SIMD3(x: 1, y: 0, z: 0)), relativeTo: entity)
+        
         return entity
     }()
 }
