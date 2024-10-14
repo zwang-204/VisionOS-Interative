@@ -16,7 +16,8 @@ struct EntryPoint: App {
     
     var body: some Scene {
         WindowGroup {
-            ShapeViewOne()
+            ContentView()
         }
+        .defaultSize(width: 2, height: 2, depth: 2, in: .meters)
     }
 }

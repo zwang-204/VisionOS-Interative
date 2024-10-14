@@ -185,6 +185,6 @@ struct ShapeViewTwo: View {
     }
 }
 
-#Preview(windowStyle: .automatic) {
+#Preview(windowStyle: .volumetric) {
     ContentView()
 }
