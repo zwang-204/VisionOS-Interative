@@ -10,14 +10,23 @@ import RealityKitContent
 
 @main
 struct EntryPoint: App {
+    
     init() {
         RealityKitContent.GestureComponent.registerComponent()
     }
     
     var body: some Scene {
-        WindowGroup {
+        WindowGroup{
             ContentView()
         }
-        .defaultSize(width: 2, height: 2, depth: 2, in: .meters)
+        
+        WindowGroup(id: "VolumeOne"){
+            VolumeViewOne()
+        }.windowStyle(.volumetric)
+        
+        WindowGroup(id: "VolumeTwo"){
+            VolumeViewTwo()
+        }.windowStyle(.volumetric)
+        
     }
 }

@@ -8,7 +8,7 @@ An extension of the app's main view that creates entities with geometries.
 import RealityKit
 import RealityKitContent
 
-extension ShapeViewOne {
+extension VolumeViewOne {
     /// The white material that responds to lighting.
     static let whiteMaterial = SimpleMaterial(color: .white, isMetallic: false)
 
